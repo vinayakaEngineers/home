@@ -1,0 +1,411 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Welcome to VINAYAKA ENGINEERS</title>
+		<link rel="shortcut icon" href="img/v.png">
+		<!-- Bootstrap 4.5 CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="font/flaticon.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$(window).scroll(function(){
+					var scroll = $(window).scrollTop();
+					if (scroll <= 239) {
+						$('#caption1').show();
+						$('#caption2').show();
+						$('#caption3').show();
+						$('#caption4').show();
+						$('#nextbtn').show();
+						$('#prevbtn').show();
+					}
+					else{
+						$('#caption1').hide();
+						$('#caption2').hide();
+						$('#caption3').hide();
+						$('#caption4').hide();
+						$('#nextbtn').hide();
+						$('#prevbtn').hide();
+					}
+				});
+			})
+		</script>
+
+
+
+	</head>
+
+	<body>
+		<!-- Top Bar -->
+		<div class="top-bar">
+			<div class="container">
+				<div class="col-12 text-right">
+					<p><a href="tel:9243104967">Call us at +91 9243104967</a></p>
+				</div>
+			</div>
+		</div>
+		<!-- End Top Bar -->
+
+
+		<!-- Navigation -->
+
+		<nav class="navbar sticky-top bg-light navbar-light navbar-expand-lg">
+			<div class="container-fluid">
+				<!--<a class="navbar-brand" href="index.html"><img src="img/mylogo.png"
+					alt="Logo" title="Logo"></a>--> 	
+
+					<a class="navbar-brand" style="color:rgb(235,10,10);" href="index.html" alt="Logo" title="Logo">VINAYAKA ENGINEERS</a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" 
+					data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span> 
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="www.google.com">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact Us</a>
+					</li>
+				</div>
+			</nav>
+
+			<!-- End Navigation -->
+
+
+			<!-- Image Carousel -->
+
+			<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="5500">
+
+				<ul class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+					<li data-target="#carousel" data-slide-to="2"></li>
+					<li data-target="#carousel" data-slide-to="3"></li>
+				</ul>
+
+				<!-- Carousel Content -->
+
+				<div class="carousel-inner">
+					<!-- for medium and large dispays -->
+					<div class="carousel-item active">
+						<img src="img/ve/Background_img2.jpg" alt="" class="w-100" >
+						<div id="caption1" class="carousel-caption">
+							<div class ="container d-none d-md-block">
+								<div class="row justify-content-around">
+									<div class="col-8 bg-custom d-none d-lg-block py-2 px-0">
+										<h2>WELCOME TO</h2> 
+										<!--<h2>TO</h2> --> 
+										<h1>VINAYAKA ENGINEERS</h1>
+										<div class="border-top border-danger w-60 mx-auto my-2"></div>
+										<h3 class="pb-2">Engineers and Fabricators</h3>
+										<!--<a href="#" class="btn btn-outline-light btn-lg">LEARN MORE</a> -->
+										<a href="#" class="btn btn-danger btn-lg">LEARN MORE</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="carousel-item">
+						<img src="img/ve/Background_img1.jpg" alt="" class="w-100">	
+						<div id="caption2" class="carousel-caption">
+							<div class ="container d-none d-md-block">
+								<div class="row justify-content-end text-right">
+									<div class="col-8 bg-custom d-none d-lg-block py-3 px-0 pr-3">
+										<!--<a href="#" class="btn btn-outline-light btn-lg">LEARN MORE</a> -->
+										<h3 class="pb-2">Precision is what today's Industry needs</h3>
+										<p class="lead">We use high precision laser cutting technology</p>
+										<!--<p class="lead">We use high precision laser cutting technology</p>-->
+										<!--<a href="#" class="btn btn-outline-danger btn-lg">Reach Us</a>-->
+										<a href="#" class="btn btn-danger btn-lg">Reach Us</a>
+									</div>
+								</div>
+							</div>
+						</div>		
+					</div>
+
+
+					<div class="carousel-item">
+						<img src="img/ve/Background_img3.jpg" alt="" class="w-100">
+						<div id="caption3" class="carousel-caption">
+							<div class ="container d-none d-md-block">
+								<div class="row justify-content-start text-left">
+									<div class="col-7 bg-custom d-none d-lg-block py-2 px-0 pl-3">
+										<!--<a href="#" class="btn btn-outline-light btn-lg">LEARN MORE</a> -->
+										<h3 class="pb-2">We shape your ideas with metals</h3>
+										<p class="lead">Specialized in Aluminium & uPVC fabrications</p>
+										<!--<p class="lead">We use high precision laser cutting technology</p>-->
+										<a href="#" class="btn btn-danger btn-lg">Reach Us</a>
+									</div>
+								</div>
+							</div>
+						</div>		
+					</div>
+
+
+					<div class="carousel-item">
+						<img src="img/ve/Background_img4.jpg" alt="" class="w-100">
+						<div id="caption4" class="carousel-caption">
+							<div class ="container d-none d-md-block">
+								<div class="row justify-content-end text-left">
+									<div class="col-5 bg-custom d-none d-lg-block py-2 px-0 pl-3">
+										<!--<a href="#" class="btn btn-outline-light btn-lg">LEARN MORE</a> -->
+										<h3 class="pb-2">Best in class Industry service</h3>
+										<!--<p class="lead">We use high precision laser cutting technology</p>-->
+										<a href="#" class="btn btn-danger btn-lg">See more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- End Carousel Content -->
+
+
+					<!--for small displays only -->
+
+					
+
+					<!-- Previous & Next Buttons -->
+
+					<a href="#carousel" class="carousel-control-prev" role="button"
+					data-slide="prev">
+					<span id="prevbtn" class="fas fa-arrow-circle-left fa-2x"></span>
+				</a>
+
+				<a href="#carousel" class="carousel-control-next" role="button"
+				data-slide="next">
+				<span id="nextbtn" class="fas fa-arrow-circle-right fa-2x"></span>
+			</a>
+			<!-- End Previous & Next Buttons -->
+		</div>
+	</div>
+	<!-- End Image Carousel -->
+
+	<!-- Main Page Heading -->
+
+
+		<!--
+		<div class="col-12 text-center mt-5">
+		
+
+			<h1 class="text-dark pt-4">Fabrication Services</h1>
+			<div class="border-top border-danger w-50 mx-auto my-3"></div>
+
+			<p id="para1">We are leading Manufacturer for sheet Metal Fabricators, Pedestal storage lockers, Sheet Metal Enclosures, Industrial tables,Industrial work stations, Desks,Ladders, Heavy Metal Fabricator, Metal Container, Machine guard,Safe Lockers, Storage Racks, lockers and many more.</p>
+			
+		-->
+
+
+		<!-- Start Fixed Background IMG -->
+		<div class="container my-lg-3"></div>
+
+		<div class="col-12 text-center mt-5">
+			<h1 class="text-dark pt-4">Fabrication Services</h1>
+			<div class="border-top border-danger w-50 mx-auto my-3"></div>
+		</div>
+
+		<div class="fixed-background">
+			<div class="row text-light py-2">
+				<div class="col-12">
+					<div class="col-12 text-center mt-5">
+						<p id="para1">We are leading Manufacturer for sheet Metal Fabricators, Pedestal storage lockers, Sheet Metal Enclosures, Industrial tables,Industrial work stations, Desks,Ladders, Heavy Metal Fabricator, Metal Container, Machine guard,Safe Lockers, Storage Racks, lockers and many more.</p>
+
+						<button type="button" data-toggle="modal" data-target="#modal1" class="btn btn-primary btn-lg mr-2">Click Me!
+						</button>
+
+						<button type="button" data-toggle="modal" data-target="#modal2" class="btn btn-danger btn-lg mr-2">Click MeToo!
+						</button>
+
+					</div>
+				</div>
+			</div>
+			<div class="fixed-wrap">
+				<div class="fixed">
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container my-lg-5"></div>
+
+		<!--Below div class is added from above and commented above-->
+
+		<div class="col-12 text-center mt-5">
+
+			<!--Services Section Two-->
+			<section class="iconarea">
+				<!--Sec Title Three-->
+				<div class="text-dark">
+					<h2>Our Services</h2>
+				</div>
+
+				<div class="border-top border-danger w-25 mx-auto my-3"></div>
+
+				<div class="container my-lg-4">
+					<!--Services Block Three-->
+					<div id="inner-icon" class="row clearfix">
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<span class="flaticon-eiffel-tower"></span>
+							<h5><a>Fabrication</a></h5>
+							<a href="#" alt="Know more" class="arrow"><span class="fas fa-info-circle fa-1x"></span></a>
+						</div>
+
+						<!--Services Block Three-->
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<span class="flaticon-challenges"></span>
+							<h5><a>Design & Development</a></h5>
+							<a href="#" alt="Know more" class="arrow"><span class="fas fa-info-circle fa-1x"></span></a>
+						</div>
+
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<span class="flaticon-welder"></span>
+							<h5><a>&nbsp;&nbsp;&nbsp;&nbsp;Cutting</a></h5>
+							<a href="#" alt="Know more" class="arrow"><span class="fas fa-info-circle fa-1x"></span></a>
+						</div>
+
+						<!--Services Block Three-->
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<span class="flaticon-weld"></span>
+							<h5><a>&nbsp;&nbsp;&nbsp;Welding</a></h5>
+							<a href="#" alt="Know more" class="arrow"><span class="fas fa-info-circle fa-1x"></span></a>
+						</div>
+
+						<!--Services Block Three-->
+
+					</div>
+				</div>
+			</section>
+		</div>
+		<!--Services Section Two-->
+
+
+
+		<!-- Three Column Section -->
+
+		<!-- End Three Column Section -->
+
+
+		<!-- Emoji Navbar First -->
+
+
+		<!-- Start Fixed Background IMG -->
+			<!--
+			<div class="fixed-background">
+				<div class="row text-light py-2">
+					<div class="col-12">
+						<div class="col-12 text-center mt-5">
+							<h1 class="text-primary pt-4">Fabrication Services</h1>
+							<div class="border-top border-danger w-50 mx-auto my-3"></div>
+							<p id="para1">We are leading Manufacturer for sheet Metal Fabricators, Pedestal storage lockers, Sheet Metal Enclosures, Industrial tables,Industrial work stations, Desks,Ladders, Heavy Metal Fabricator, Metal Container, Machine guard,Safe Lockers, Storage Racks, lockers and many more.</p>
+						</div>
+					</div>
+				</div>
+				<div class="fixed-wrap">
+					<div class="fixed">
+						
+					</div>
+				</div>
+				
+			</div>
+		-->
+		<!-- End Fixed Background IMG -->
+
+
+		<!-- Emoji Navbar Second -->
+
+
+		<!-- Modal Popup -->
+		<div class="modal fade" id="modal1">
+			<div class="modal-dialog">
+				<img src="img/emoji/poo.gif" alt="" class="w-100">
+			</div>		 	
+		</div> 
+
+		<div class="modal fade" id="modal2">
+			<div class="modal-dialog">
+				<img src="img/emoji/panda.gif" alt="" class="w-100">
+			</div>		 	
+		</div> 
+
+
+		<!-- Start Two Column Section -->
+
+		<div class="container my-5">
+			<div class="row py-4">
+				<div class="col-lg-6 mb-4 my-lg-auto">
+					<h3 class="text-dark font-weight-bold mb-3">About Our Company</h3>
+					<p class="mb-6">Owing to vast expertise, We at Vinayaka Engineers, have become one of the leading name in metal fabrication service. Whole process of desing and development are done under strict surveillance of quality experts and supervisors, who ensure that quality of products manufactured is maintained. We also have state-of-the-art infrastructure, with latest machinery and large work-force facility that ensures we are capable to meet market and customer demands. All this has garnered us complete client satisfaction.</p>
+				</div>
+				<div class="col-lg-6"><img src="img/emoji/chicken.gif" alt="" class="w-100"></div>
+			</div>
+		</div>
+		<!-- End Two Column Section -->
+
+
+		<!-- Start Jumbotron -->
+		<div class="jumbotron py-3 mb-0">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-7 col-lg-8 col-xl-9 my-auto">
+						<h5>Looking for quality fabrication work?</h5>
+					</div>
+					<div class="col-md-2 col-lg-2 col-xl-3 pt-4 pt-md-0">
+						<a href="contact.html" class="btn btn-primary btn-sm">Contact Us Today</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Jumbotron -->
+
+
+		<!-- Start Footer -->
+
+		<!-- End Footer -->
+
+
+		<!-- Start Socket -->
+
+		<!-- End Socket -->
+
+		<div class="container my-lg-5"></div>
+		<!-- Script Source Files -->
+
+		<!-- jQuery -->
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<!-- Bootstrap 4.5 JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Popper JS -->
+		<script src="js/popper.min.js"></script>
+		<!-- Font Awesome -->
+		<script src="js/all.min.js"></script>
+
+		<!-- End Script Source Files -->
+	</body>
+	</html>

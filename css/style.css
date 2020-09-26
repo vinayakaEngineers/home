@@ -1,0 +1,258 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #616971;
+}
+
+/*============= TOP BAR HEADER =============*/
+.top-bar {
+background: red;
+height: 1.5rem;
+padding: 0.1rem 0;
+}
+
+.top-bar a {
+color: white;
+text-decoration: none;
+font-size: 1rem;
+}
+
+/*============= NAVIGATION =============*/
+.navbar-brand img {
+height: 2rem;
+box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.4);
+}
+
+
+.navbar-brand {
+width: 100%;
+height: 3.9rem;
+text-align: left;
+text-shadow: 0.1rem 0.3rem 0.3rem rgba(0,0,0,0.3);
+letter-spacing: 0.5px;
+/*font-size:2.6vw;*/
+font-size:32px;
+font-weight: bold;
+font-family: Times;
+z-index: 1;
+
+}
+
+/*navbar size change based on device type*/
+
+
+@media screen and (min-width: 601px) {
+  .navbar-brand {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
+}
+
+.navbar {
+ font-size: 1.1rem;
+ font-weight: 640;
+ letter-spacing: 0.1rem;
+ white-space: nowrap;
+ box-shadow: 0 0.5rem 0.5rem rgba(0,0,0.5,0.4);
+ z-index: 1;
+
+}
+
+.nav-item {
+padding: 0.5rem;
+}
+
+.nav-link {
+color:black!important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+color:red!important;
+}
+
+
+.carousel-control-prev {
+color:orange;
+
+}
+
+.carousel-control-next {
+color:orange;
+}
+
+
+/*============= CAROUSEL =============*/
+
+#carousel {
+  box-shadow: 0 1rem 1rem rgba(0,0,0,0.1);
+}
+
+.carousel-inner {
+max-height: 36rem!important;
+height:auto; 
+
+}
+
+/*---Change Carousel Transition Speed --*/
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform 0.8s ease;
+}
+
+/*-- Carousel Content --*/
+
+.carousel-caption {
+  position: absolute;
+  top: 54%;
+  transform: translateY(-60%);
+
+}
+
+
+#mcaption1 {
+  position: absolute;
+  top: 34%;
+
+}
+
+
+.bg-custom {
+background-color: rgba(0,0,0,0.4);
+color: white;
+border-radius: 1rem; 
+
+}
+
+.carousel-caption h1 {
+font-size: 2.8rem;
+text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,1);
+}
+
+.border-danger {
+  border-top: 0.14rem solid red!important;
+}
+
+.btn-lg {
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  border-width: small;
+}
+
+
+/*----Carousel caption resizing based on device----*/
+
+
+
+
+/*Paragram changes*/
+
+#para1 {
+font-size:20px;
+font-family:Montserrat;
+margin:0px 110px 0px 110px;
+color: white;
+}
+
+
+#inner-icon {
+color: orange;
+
+}
+
+/*===== FIXED BACKGROUND IMG =====*/
+.fixed {
+background-image: url(../img/ve/fixed_img1.jpg);
+
+}
+.fixed-background {
+  padding: 8rem 0rem;
+}
+
+/*-- Emoji Navbar --*/
+
+
+
+/*============= FOOTER =============*/
+
+
+
+/*============= SOCKET =============*/
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  /*commented z-index to avoid overlaping nav-bar sticky-top*/
+  /*z-index: 1000!important;*/
+
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
